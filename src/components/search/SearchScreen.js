@@ -9,7 +9,7 @@ export const SearchScreen = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const { q: query = "" } = queryString.parse(location.search); 
+  const { q: query = "" } = queryString.parse(location.search);
 
   const [formValue, handlerInputChange] = useForm({ searchText: query });
 
